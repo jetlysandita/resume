@@ -1,6 +1,10 @@
 import { Menu } from './menu'
 const menu = [
   {
+    title: 'Home',
+    href: '/'
+  },
+  {
     title: 'About',
     href: '/about'
   },

@@ -16,11 +16,10 @@ export default function List({ defaultItems }: List) {
     <>
       <div className='container'>
         <ul >
-
           {
             items.map((item, i) => {
               return (
-                <li className='item'>
+                <li className='item' key={i}>
                   <span className='title'>
                     {item.title}
                   </span>

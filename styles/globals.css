@@ -9,8 +9,8 @@ ul{
   margin:0;
 }
 
-h2{
-  margin-bottom: 0;
+h2,h1{
+  margin: 10px;
 }
 
 #__next{

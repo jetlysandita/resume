@@ -8,6 +8,7 @@ export default function MetaTag({ title }: MetaTag) {
       <Head>
         <title>{title}</title>
         <meta name='description' content='Example landing page' />
+        <link rel="icon" href="/js.svg"></link>
         <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto&display=swap"></link>
       </Head>

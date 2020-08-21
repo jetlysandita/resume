@@ -25,6 +25,7 @@ export default function SideToSide({ children, justifyContent }: SideToSide) {
             .container{
               flex-direction: column;
               width: auto;
+              padding: 0 20px;
               height: auto;
             }
           }
