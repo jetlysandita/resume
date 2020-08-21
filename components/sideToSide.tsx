@@ -1,8 +1,9 @@
 
 interface SideToSide {
   children: React.ReactNode
+  justifyContent?: string
 }
-export default ({ children }: SideToSide) => {
+export default function SideToSide({ children, justifyContent }: SideToSide) {
 
   return (
     <>
@@ -16,7 +17,7 @@ export default ({ children }: SideToSide) => {
             min-height: 92%;
 
             align-items:center;
-            justify-content:space-evenly;
+            justify-content:${ justifyContent ?? 'space-evenly'};
           }
           @media screen and (max-width:700px){
             .container{

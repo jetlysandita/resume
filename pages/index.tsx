@@ -3,17 +3,12 @@ import dynamic from 'next/dynamic'
 const Header = dynamic(() => import('../components/header'))
 const SideToSide = dynamic(() => import('../components/sideToSide'))
 const Card = dynamic(() => import('../components/card'))
+const MetaTag = dynamic(() => import('../components/metaTag'))
 
-import Head from 'next/head'
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Programmer - Jetly Sandita</title>
-        <meta name='description' content='Example landing page' />
-        <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto&display=swap"></link>
-      </Head>
+      <MetaTag title='Programmer - Jetly Sandita' />
       <Header />
       <SideToSide>
         <Card
@@ -22,7 +17,7 @@ export default function Home() {
         >
           <img src={require('../public/Jetly Sandita.jpg?resize&size=600')} alt='avatar' className='img' />
         </Card>
-        <Card animation width='60%' height='80%' padding='20px'>
+        <Card width='60%' height='80%' padding='20px'>
           <h1 >Jetly Sandita</h1>
           <p className="description">
             I'm a programmer based in Jakarta, Indonesia. I've been in business since 2018.
@@ -71,6 +66,7 @@ export default function Home() {
 }
 
 export async function getStaticProps() {
+
   return {
     props: {},
     revalidate: 360

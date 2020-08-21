@@ -5,6 +5,13 @@ body{
   background-size: cover;
   min-height: 100vh;
 }
+ul{
+  margin:0;
+}
+
+h2{
+  margin-bottom: 0;
+}
 
 #__next{
   height: 100vh;

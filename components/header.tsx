@@ -13,12 +13,12 @@ const menu = [
     href: '/contact'
   },
 ]
-export default () => {
+export default function Header() {
   return (
     <>
       <header className='container'>
         <a href="/">
-          <span>JS</span>
+          <img src={require('../public/js.svg')} alt='logo' className='img' />
         </a>
         <Menu defaultItems={menu}></Menu>
       </header>
@@ -33,6 +33,10 @@ export default () => {
             height: 8%;
             padding: 0 20px;
             box-shadow: 0px 1px 8px; 
+          }
+          .img{
+            width: 35px;
+            height: 35px;
           }
           @media screen and (max-width:700px){
             .container{
