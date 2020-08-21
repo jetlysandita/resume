@@ -4,7 +4,9 @@ interface SideToSide {
   justifyContent?: string
 }
 export default function SideToSide({ children, justifyContent }: SideToSide) {
-
+  if (!justifyContent) {
+    justifyContent = 'space-evenly'
+  }
   return (
     <>
       <div className='container' >
@@ -17,7 +19,7 @@ export default function SideToSide({ children, justifyContent }: SideToSide) {
             min-height: 92%;
 
             align-items:center;
-            justify-content:${ justifyContent ?? 'space-evenly'};
+            justify-content:${ justifyContent};
           }
           @media screen and (max-width:700px){
             .container{
